@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos fotógraficos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    background-color: #1abc9c;
+}
+
+.logo {
+    color: #1abc9c;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+
+.encabezado {
+    background-color: #1abc9c;
+    height: 400px;
+    text-align: center;
+
+}
+
+.encabezado h1 {
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+
+.encabezado p {
+    color: #fbfbfb;
+    margin-bottom: 20px;
+}
+
+
+.temario {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.tab {
+    background-color: #1a252f;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+#btn {
+    display: inline-block;
+    background-color: #1a252f;
+    padding: 13px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#btn:hover {
+    background-color: #283949;
+}
+
+img {
+    max-width: 100%;
+}
+
+.titulo {
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.subtitulo {
+    font-size: 30px;
+}
+
+.planos {
+ 
+    padding: 20px;
+    text-align: center;
+}
+
+
+.subtitulo {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.planos-contenido .card {
+    float: left;
+    width: 30%;
+    height: 400px;
+    margin: 10px;
+    background-color: #2c3e50;
+}
+
+.planos-contenido .card img {
+    width: 350px;
+}
+
+.planos-contenido .card h3 {
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+.planos-contenido .card p {
+    color: #d2d2d2;
+    padding: 15px;
+}
+
+.blog {
+    text-align: center;
+    clear: both;
+    position: relative;
+}
+
+.blog img {
+    width: 350px;
+}
+
+.blog1 {
+width: 62%;
+ display: flex;
+}
+
+article {
+    background-color: #2c3e50;
+    margin: 0 10px;
+}
+
+article h4 {
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+article p {
+    color: #d2d2d2;
+    padding: 15px;
+}
+
+.mas {
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
+.mas a {
+    display: block;
+    margin: 15px 0;
+    color: #2c3e50;
+    text-decoration: none;
+
+}
+
+.mas a:hover {
+    color: #1abc9c;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #1a252f;
+    color: #FFFFFF;
+    clear: both;
+    padding: 100px 0;
+    position: relative;
+}
+
+.yo {
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    right: 250px;
+}
+
+
+.btn {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #1abc9c;
+    padding: 8px;
+}
+
+.btn:hover {
+    background-color: #1ddbb5;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-dark">
+        <nav class="navbar navbar-expand-lg container  " data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="#">Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#planos">Planos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+               
+                
+                </ul>
+             
+              </div>
+            </div>
+          </nav>
+    </div>
+  
+  
+   
+    <header class="encabezado">
+        <div class="container">
+            <h1 class="titulo">Planos fotógraficos</h1>
+            <p>
+                son diferentes perspectivas para capturar imágenes o escenas. Cada uno
+                tiene un propósito y efecto únicos. Ejemplos incluyen plano general
+                (vista amplia), medio (cintura arriba), corto (primer plano) y detalle
+                (énfasis). La elección del plano afecta la historia visual.
+            </p>
+            <a href="#" id="btn">Mas informacion</a>
+        </div>
+       
+    </header>
+
+<section class="temario">
+
+    <table class="tab">
+        <thead>
+            <tr>
+                <th>Tema</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Plano general</td>
+                <td><a class="btn" href="#planogeneral">Saber mas</a></td>
+            </tr>
+            <tr>
+                <td>Plano americano</td>
+                <td><a class="btn" href="#planoamericano">Saber mas</a></td>
+            </tr>
+            <tr>
+                <td>Plano medio</td>
+                <td><a class="btn" href="#planomedio">Saber mas</a></td>
+            </tr>
+            <tr>
+                <td>Plano medio corto</td>
+                <td><a class="btn" href="#planomediocorto">Saber mas</a></td>
+            </tr>
+            <tr>
+                <td>Primer plano</td>
+                <td><a class="btn" href="#primerplano">Saber mas</a></td>
+            </tr>
+            <tr>
+                <td>Primerísimo primer plano</td>
+                <td><a class="btn" href="#primerísimoprimerplano">Saber mas</a></td>
+            </tr>
+            <tr>
+                <td>Plano detalle</td>
+                <td><a class="btn" href="#planodetalle">Saber mas</a></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</section>
+    
+ <main class="planos " id="planos">
+        <h2 class="subtitulo">Planos fotográficos más comunes</h2>
+
+        <div class="planos-contenido container">
+            <div class="card" id="planogeneral">
+                <img src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/Plano%20general.jpg?alt=media&token=eb99aa9a-e0d7-484c-8e63-df6658b4ff1d" alt="Plano general">
+                <h3>Plano general</h3>
+                <p>En este plano, se muestra una vista amplia de la escena,
+                    capturando un área extensa. Puede utilizarse para establecer
+                    el contexto o el entorno en el que se desarrolla la acción.</p>
+            </div>
+            <div class="card" id="planoamericano">
+                <img src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/Plano%20americano.jpg?alt=media&token=6c6c4bb6-2e81-4ae2-a24a-a6fe9230d31a" alt="Plano americano">
+                <h3>Plano americano</h3>
+                <p>El plano americano muestra a una persona desde las rodillas hacia arriba,
+                    con parte de las piernas en el encuadre. Se usa para destacar detalles y se
+                    originó en películas del oeste para mostrar revólveres en cinturones.</p>
+            </div>
+            <div class="card" id="planomedio">
+                <img src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/Plano%20medio.jpg?alt=media&token=1fc8f7b4-e470-4983-aad7-0efd259e82fa" alt="Plano medio">
+                <h3>Plano medio</h3>
+                <p>En este caso, la cámara enfoca a la persona o el objeto principal desde la
+                    cintura hacia arriba. Proporciona más detalles y permite que el espectador
+                    se concentre en la expresión facial y los gestos.</p>
+            </div>
+            <div class="card" id="planomediocorto">
+                <img src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/Plano%20medio%20corto.jpg?alt=media&token=febc819f-bb09-4da3-aa29-cb8e4351d7cd" alt="Plano medio corto">
+                <h3>Plano medio corto</h3>
+                <p>El plano medio corto muestra a una persona desde aproximadamente
+                    la cintura hacia arriba. Destaca la expresión facial y gestos,
+                    brindando más detalles que un plano medio convencional.</p>
+            </div>
+            <div class="card" id="primerplano">
+                <img src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/Primer%20plano.jpg?alt=media&token=1b38b765-a160-4996-9686-9b7e7021ddc6" alt="Primer plano">
+                <h3>Primer plano</h3>
+                <p>Un primer plano es un enfoque cercano en una persona u objeto,
+                    resaltando detalles clave y expresiones. Se usa para destacar
+                    emociones y elementos importantes.</p>
+            </div>
+            <div class="card" id="primerísimoprimerplano">
+                <img src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/Primer%C3%ADsimo%20primer%20plano.jpg?alt=media&token=b77bf60d-1a5e-488b-8539-1eda1fe1caf1" alt="Primerísimo primer plano">
+                <h3>Primerísimo primer plano</h3>
+                <p>Un primerísimo primer plano es un encuadre extremadamente
+                    cercano que resalta los detalles más íntimos de un sujeto,
+                    como los ojos o los labios de una persona, o las texturas de un objeto.
+                    Se utiliza para crear un impacto visual fuerte y enfatizar elementos
+                    específicos con gran detalle.</p>
+            </div>
+            <div class="card" id="planodetalle">
+                <img src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/Plano%20detalle.jpg?alt=media&token=4ce18c5a-56a9-427e-a5ff-bbd8a963f02b" alt="Plano detalle">
+                <h3>Plano detalle</h3>
+                <p>El plano detalle se enfoca en una parte pequeña
+                    y específica de un objeto o persona, capturando
+                    detalles minuciosos. Este tipo de plano se utiliza
+                    para resaltar elementos particulares y crear un efecto
+                    de cercanía y atención a detalles que podrían pasar
+                    desapercibidos en planos más amplios.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <section class="blog container" id="blog">
+        <h2 class="subtitulo">Nuestro Blog</h2>
+        <div class="blog1 ">
+            
+
+            <article>
+                <img src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/blog1.jpg?alt=media&token=87046d7e-cd21-47d6-bb52-6fbdcf6111f5" alt="blog 1">
+                <h4>Cuando utilizar los planos fotograficos</h4>
+                <p>Escrito por : Manuel Ramírez fecha : <span> 08/2023 </span></p>
+                <p>
+                    Las distintas técnicas audiovisuales
+                    ayudan a comunicar tu mensaje a la hora de grabar videos.
+                    Entre ellas, los planos fotográficos son tus principales
+                    aliados para transmitir una idea, sensación o emoción usando
+                    el lenguaje cinematográfico.
+                </p>
+            </article>
+            <article>
+                <img src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/blog2.jpg?alt=media&token=b20d628b-e5a7-47c4-9d01-87828d931c59" alt="blog 2">
+                <h4>Crea una gran historia con planos fotográficos</h4>
+                <p>Escrito por : Manuel Ramírez fecha : <span> 08/2023 </span></p>
+                <p>
+                    No se trata solo de elegir el formato correcto o el escribir
+                    un gran guion. Si quieres producir buenos videos debes saber
+                    posicionar correctamente la cámara para contar la historia de
+                    una manera diferente y generarle a la audiencia determinadas
+                    sensaciones y respuestas emocionales.
+                </p>
+            </article>
+        </div>
+
+        <aside class="mas">
+            <h3>Otros articulos</h3>
+            <a href="#">Planos no tan comunes</a>
+            <a href="#">Planos y iluminación </a>
+            <a href="#">Planos y camaras </a>
+            <a href="#">Planos y sol </a>
+        </aside>
+
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div>
+                <h3>Informacion personal</h3>
+                <p>Nombre: Manuel Ramírez </p>
+                <p>Institución: Colegio Skolmi</p>
+                <p>Correo: clasesvirtuales2020pty@gmail.com</p>
+                <p>Contacto: 6458-8614</p>
+            </div>
+    
+            <img class="yo" src="https://firebasestorage.googleapis.com/v0/b/react-netflix-clone-2d753.appspot.com/o/Manuel%20Ram%C3%ADrez.jpg?alt=media&token=4321b698-9d6a-41d0-af92-c0a93c1d2f35" alt="Manuel Ramírez">
+    
+        </div>
+       
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
